@@ -1,0 +1,28 @@
+{
+    "name": "laravel-ux/dark-mode",
+    "description": "Dark mode support for Laravel UX applications.",
+    "keywords": ["dark-mode", "laravel", "livewire", "tailwind"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "laravel/framework": "^13.0",
+        "livewire/livewire": "^4.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelUx\\DarkMode\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelUx\\DarkMode\\DarkModeServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
