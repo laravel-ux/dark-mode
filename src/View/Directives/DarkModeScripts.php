@@ -6,7 +6,7 @@ class DarkModeScripts
 {
     public function __invoke(): string
     {
-        return <<<HTML
+        return <<<'HTML'
 <script>
     document.documentElement.classList.toggle('dark', {{ Js::from(session('darkMode', false)) }})
     document.addEventListener('alpine:init', () => {

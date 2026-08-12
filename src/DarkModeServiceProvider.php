@@ -11,7 +11,7 @@ class DarkModeServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'ux.dark-mode');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'ux.dark-mode');
 
         Blade::directive('darkModeScripts', new DarkModeScripts);
 

@@ -6,10 +6,22 @@ Install Laravel UX Dark Mode with Composer.
 composer require laravel-ux/dark-mode
 ```
 
-Laravel package discovery registers the service provider automatically.
+Laravel package discovery registers the service provider automatically. Laravel UX UI and Icons are installed as
+package dependencies because the included toggle composes their Button and Icon components.
 
-The included toggle currently renders Laravel UX Button and Icon components. Until package-to-package dependencies
-are formalized, the consuming application must already provide Laravel UX UI and Icons.
+## Install the UI frontend assets
+
+Run the Laravel UX UI installer, then install the frontend dependencies:
+
+```shell
+php artisan ux:install
+npm install
+npm run build
+```
+
+The installer imports the Laravel UX stylesheet and Alpine plugins into the application's frontend entrypoints. It is
+safe to run again when Laravel UX UI is already configured. During development, use `npm run dev` instead of the
+production build command.
 
 ## Tailwind dark variant
 
