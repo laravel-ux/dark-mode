@@ -1,0 +1,4 @@
+interface:
+  display_name: "Laravel UX Dark Mode"
+  short_description: "Build persistent dark mode for Laravel UX"
+  default_prompt: "Use $laravel-ux-dark-mode-development to add or debug persistent dark mode in my Laravel UX application."

@@ -1,0 +1,7 @@
+- ## Getting Started
+    - [Introduction](introduction.md)
+    - [Installation](installation.md)
+- ## Guides
+    - [Usage](usage.md)
+    - [Events and Customization](events-and-customization.md)
+    - [AI Assistance](ai-assistance.md)
