@@ -44,6 +44,9 @@ The directive exposes the current boolean value through the Alpine store:
 Use the store to reflect the selected mode in nearby client-side UI. Let the Livewire toggle own persistence instead
 of writing directly to `localStorage` or the session from multiple controls.
 
+When using `wire:navigate`, keep `@darkModeScripts` in the document layout. The directive reapplies the current mode
+after each Livewire navigation so the `dark` class is not removed when Livewire morphs the `<html>` element.
+
 ## Server-side state
 
 Read the selected value from the session when server-rendered content needs to know the current mode:
